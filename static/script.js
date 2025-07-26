@@ -26,7 +26,7 @@ function submitLocation(event) {
         const location = `${street}, ${city}, ${state}`;
         geocode(location);
     } else {
-        fetch("https://ipinfo.io/76.91.181.24?token=c91a5f15c0c1a3")
+        fetch("https://ipinfo.io/76.91..?token=")
         .then(response => response.json())
         .then(data => {
             sendGeocode(data.latitude, data.longitude);
@@ -49,7 +49,7 @@ function clearTooltips() {
 }
 
 function geocode(location) {
-    const GOOGLE_API_KEY = "AIzaSyDDeGtLLtldNwtwmQHFVpAuthhraXFWfXw";
+    const GOOGLE_API_KEY = "";
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(location)}&key=${GOOGLE_API_KEY}`;
     fetch(url)
     .then(response => response.json())
@@ -59,7 +59,7 @@ function geocode(location) {
             const lng = data.results[0].geometry.location.lng;
             sendGeocode(lat, lng);
         } else {
-            fetch("https://ipinfo.io/76.91.181.24?token=c91a5f15c0c1a3")
+            fetch("https://ipinfo.io/76.91..?token=")
             .then(response => response.json())
             .then(data => {
                 sendGeocode(data.latitude, data.longitude);
