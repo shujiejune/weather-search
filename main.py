@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-TOMORROW_API_KEY = "QKvljmj0PsgTIjwuBHAdGzu0rElSu8fN"
+TOMORROW_API_KEY = ""
 tomorrow_url = "https://api.tomorrow.io/v4/timelines"
 
 weather_code_mapping = {
