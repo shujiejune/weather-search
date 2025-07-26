@@ -17,5 +17,3 @@ handlers:
   script: auto
 
 env_variables:
-  GOOGLE_API_KEY: AIzaSyDDeGtLLtldNwtwmQHFVpAuthhraXFWfXw
-  TOMORROW_API_KEY: QKvljmj0PsgTIjwuBHAdGzu0rElSu8fN
